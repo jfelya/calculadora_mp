@@ -1,0 +1,40 @@
+html 
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    color: #B4A79E;
+    font-size: 24px;
+    margin: 25px;
+    text-align: center;
+    font-family: Century Gothic;
+    background: url("background.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+.container-fluid {
+    background-color: rgba(35,45,55,0.95);
+    border-radius: 20px;
+    padding: 50px;
+}
+button {
+    width: 100%;
+}
+h3 {
+   color: #A7414A;
+   text-shadow: 2px 2px 12px;
+}
+h4 {
+    text-shadow: 2px 2px 12px;
+}
+.form-control {
+    background-color: rgb(65,85,95);
+    color: #C4B7AE;
+}
+.form-control:focus {
+  background-color: rgb(65,85,95);
+  color: #C4B7AE;
+}

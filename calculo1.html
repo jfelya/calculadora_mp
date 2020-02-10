@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cálculo con Velocidad, Ángulo y Posición</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="estilos/calculadora.css">
+	<script src="estilos/SmoothScroll.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<h4 style="color: lightblue">Cálculo con Velocidad, Ángulo y Posición</h4>
+			</div>
+		</div><br><br>
+		<!-- Velocidad Inicial -->
+		<div class="form-group row">
+			<div class="col-md-3"></div>
+			<div class="col-md-4">
+				<label for="vo">
+					Velocidad Inicial <span style="font-weight: bold; color: #C48FAB;">[v0]</span>
+				</label>
+			</div>
+			<div class="col-md-2">
+				<input class="form-control" id="vo" type="number" min="0" step="1" autofocus="yes" placeholder="m/s">
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+		<!-- Ángulo Inicial -->
+		<div class="form-group row">
+			<div class="col-md-3"></div>
+			<div class="col-md-4">
+				<label for="ao">
+					Ángulo Inicial <span style="font-weight: bold; color: #D48FAB;">[α]</span>
+				</label>
+			</div>
+			<div class="col-md-2">
+				<input class="form-control" id="ao" type="number" min="0" step="1" placeholder="°">
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+		<!-- Posición Horizontal Iniciada -->
+		<div class="form-group row">
+			<div class="col-md-3"></div>
+			<div class="col-md-4">
+				<label for="xo">
+					Posición Horizontal Iniciada <span style="font-weight: bold; color: #D48FAB;">[x0]</span>
+				</label>
+			</div>
+			<div class="col-md-2">
+				<input class="form-control" id="xo" type="number" min="0" step="1" placeholder="m">
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+		<!-- Posición Vertical Iniciada -->
+		<div class="form-group row">
+			<div class="col-md-3"></div>
+			<div class="col-md-4">
+				<label for="yo">
+					Posición Vertical Iniciada <span style="font-weight: bold; color: #D48FAB;">[y0]</span>
+				</label>
+			</div>
+			<div class="col-md-2">
+				<input class="form-control" id="yo" type="number" min="0" step="1" placeholder="m">
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<p id="texto1"></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<button class="btn btn-outline-primary" id="boton_calcular1" onclick="calculo1();">Calcular</button>
+			</div>
+			<div class="col-md-3"></div>
+		</div><br>
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<a class="btn btn-outline-secondary btn-block" href="mainpage.html">Regresar</a>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+	</div>
+</body>
+<script src="procesos/procesos.js"></script>
+</html>
